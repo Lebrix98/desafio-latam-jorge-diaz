@@ -1,0 +1,31 @@
+.example__cssFolder {
+    > p {
+        color: red;
+    }
+}
+
+.tabla {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #ddd;
+
+    > thead {
+        background-color: cornflowerblue;
+        color: white;
+        font-weight: 800;
+    }
+    
+    > th, td {
+        border: 1px solid #ddd;
+        border-collapse: collapse;
+    }
+
+    > th {
+        padding: 0.5em;
+    }
+
+    > th > td {
+        text-align: right;
+        padding: 0.2em;
+    }
+}
