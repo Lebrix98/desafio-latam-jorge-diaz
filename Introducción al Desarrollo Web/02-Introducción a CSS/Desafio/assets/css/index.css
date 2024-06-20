@@ -82,3 +82,21 @@ html {
     }
 
 }
+
+.back__index {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  right: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+
+  > p > a > img {
+    width: 100%;
+    max-width: 45px;
+    height: 45px;
+  }
+}
