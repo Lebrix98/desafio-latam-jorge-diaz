@@ -1,0 +1,128 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.header_mascota {
+  width: 100%;
+  max-width: 100vw;
+  height: 10rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("../img/croquetas.webp");
+  background-size: cover;
+
+  > h1 {
+    margin: 0px 0px 0px 20px;
+    color: rgb(0, 47, 255);
+    text-shadow: 1px 1px 1px yellow;
+  }
+
+  > h1:hover {
+    color: yellow;
+    text-shadow: 1px 1px 1px rgb(0, 47, 255);
+  }
+
+  > img {
+    max-width: 150px;
+  }
+}
+
+.nav_mascota {
+  width: 100%;
+  background-color: brown;
+  > ul {
+    max-width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0px 10px 0px;
+    margin: 0px;
+    > li {
+      font-weight: 900;
+      > a {
+        color: white;
+        text-decoration: none;
+      }
+
+      > a:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.section_mascota {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url("../img/croquetas.webp");
+
+  > div {
+    background-color: white;
+    max-width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+
+    > h3 {
+      margin: 0px 0px 10px 0px;
+    }
+
+    > p {
+      margin: 10px 0px 0px 0px;
+    }
+  }
+}
+
+.article_mascota {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > form {
+        display: flex;
+        max-width: 80%;
+        flex-direction: column;
+
+        > label {
+            margin: 10px;
+        }
+    }
+}
+
+.footer_mascota {
+  width: 100%;
+  background-color: brown;
+
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+
+    > h2, h4 {
+      margin: 0px;
+    }
+  }
+}
+
+.arrowBack {
+  border-radius: 6px;
+  bottom: 5px;
+  right: 10px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  text-align: center;
+  z-index: 15;
+
+  > p > a > img {
+    width: 45px;
+    height: 45px;
+  }
+}
