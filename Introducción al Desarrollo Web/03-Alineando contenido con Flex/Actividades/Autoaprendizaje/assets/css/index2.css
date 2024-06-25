@@ -1,0 +1,43 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.father_lorem {
+  width: 100%;
+  > p {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+.father_flex {
+  display: flex;
+  justify-content: center;
+  > p {
+    padding: 5px;
+  }
+}
+
+.father_img {
+  display: flex;
+  flex-flow: row wrap;
+
+  > div {
+    padding: 25px;
+    text-align: center;
+    > img {
+      width: 100%;
+      max-width: 250px;
+      border-radius: 20px;
+    }
+
+    > p {
+      color: orange;
+      text-decoration: underline;
+    }
+  }
+
+}

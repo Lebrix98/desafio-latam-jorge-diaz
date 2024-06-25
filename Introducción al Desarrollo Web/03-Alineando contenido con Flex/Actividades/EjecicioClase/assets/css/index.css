@@ -1,0 +1,91 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.nav_flex {
+  display: flex;
+  background-color: black;
+  align-items: center;
+  > ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+
+    > li {
+      > a {
+        padding: 1.2rem;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.dragon_flex {
+  width: 100%;
+  max-width: 60px;
+  color: white;
+  text-align: center;
+}
+
+.nav_flex > ul > li > a:hover {
+  color: black;
+  background-color: white;
+}
+
+.father_flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+
+  > div > img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 25px;
+  }
+
+  > div > h4 {
+    color: orange;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0px 0px 0px 10px;
+  }
+}
+
+.characteristics_flex {
+  background-color: #d7d7d7;
+  margin-top: 20px;
+
+  > h2 {
+    padding: 25px 0px 25px 0px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0px;
+  }
+
+  > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    > div {
+      text-align: center;
+      width: 25%;
+      margin-bottom: 30px;
+
+      > .icon_flex {
+        font-size: 4rem;
+      }
+
+      > p {
+        margin: 30px 0px 0px 15px;
+      }
+    }
+  }
+}
