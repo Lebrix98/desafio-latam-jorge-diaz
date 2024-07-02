@@ -1,0 +1,7 @@
+.tryBootstrap {
+    > div {
+      border: 1px dashed red;
+      padding: 2rem;
+      margin: 1rem;
+    }
+  }
