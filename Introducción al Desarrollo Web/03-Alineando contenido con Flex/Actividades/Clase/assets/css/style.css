@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar {
+  align-items: center;
+  background-color: black;
+  display: flex;
+  width: 100%;
+  > h1 {
+    color: white;
+    font-size: 24px;
+    padding: 0.5rem;
+  }
+  > div {
+    > ul {
+      display: flex;
+      gap: 30px;
+      > li {
+        list-style: none;
+        padding: 1.2rem;
+        > a {
+          color: white;
+          padding: 1.2rem;
+          text-decoration: none;
+        }
+        > a:hover {
+          background-color: #d7d7d7;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.Content {
+  margin: 0.5rem;
+
+  > section {
+    margin-top: 1rem;
+  }
+
+  > .Title {
+    font-size: 24px;
+  }
+
+  > .Boxes {
+    display: flex;
+    justify-content: space-between;
+    > .Box {
+      width: 25%;
+    }
+  }
+
+  > .Images {
+    display: flex;
+    flex-flow: row wrap;
+    > div {
+      border: 1px dashed orange;
+      border-radius: 25px;
+      margin: 0.3rem;
+      > h4 {
+        color: orange;
+        text-align: center;
+        text-shadow: 0.5px 0.5px 0.5px orange;
+      }
+      > img {
+        border-radius: 25px;
+        max-width: 250px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.Footer {
+  background-color: #d7d7d7;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  padding: 1rem;
+  > h2 {
+    font-size: 28px;
+    margin: 2rem;
+    text-align: center;
+  }
+  > div {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    > div {
+      width: 25%;
+      > i {
+        font-size: 50px;
+        margin-bottom: 1rem;
+      }
+      > p {
+        text-align: justify;
+      }
+    }
+  }
+}
