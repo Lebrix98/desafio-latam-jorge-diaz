@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #28a745;
+}
+
+section {
+    padding: 1rem;
+    > div > .card {
+        margin-top: 2rem;
+        padding: 0;
+    }
+}
