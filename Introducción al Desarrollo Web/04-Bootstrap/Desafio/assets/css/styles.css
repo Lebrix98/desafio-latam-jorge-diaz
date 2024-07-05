@@ -9,10 +9,40 @@ nav {
   background-color: #28a745;
 }
 
-section {
-    padding: 1rem;
-    > div > .card {
-        margin-top: 2rem;
-        padding: 0;
+.destination {
+  > div > .card {
+    width: 100%;
+    max-width: 30%;
+    margin-left: 30px;
+    margin-top: 2rem;
+    padding: 0;
+
+    @media screen and (max-width:375px) {
+      max-width: 80%;
+      margin-left: 0px;
     }
+  }
+}
+
+.formCuppon {
+  background-color: #28a745;
+
+}
+
+.back__index {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  right: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+
+  > p > a > img {
+    width: 100%;
+    max-width: 45px;
+    height: 45px;
+  }
 }

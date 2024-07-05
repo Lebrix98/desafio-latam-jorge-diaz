@@ -1,75 +1,93 @@
-body,
-html {
-  margin: 0px;
-  padding: 0px;
+* {
   border: 0px;
   font-family: "Raleway";
+  margin: 0px;
+  padding: 0px;
 }
 
 .header_iguana {
-  width: 100%;
   background-color: #000000;
+  width: 100%;
 
   > h1 {
+    color: #ffffff;
     font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 0px;
     margin: 0;
+    opacity: 1;
     padding: 10px;
     text-align: center;
-    letter-spacing: 0px;
-    color: #ffffff;
-    opacity: 1;
-    font-weight: 600;
   }
 }
 
 .section_iguana {
+  display: flex;
   > img {
     width: 100%;
   }
 }
 
 .description_iguana {
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
   background-color: #000000;
+  display: flex;
+  justify-content: center;
   padding: 4rem 0rem;
-  margin-top: -10px;
+  width: 100%;
+
+  @media screen and (max-width: 700px) {
+    flex-direction: column;
+  }
 
   > div {
-    width: 40%;
     max-width: 35rem;
+    width: 40%;
+
+    @media screen and (max-width: 700px) {
+      width: 80%;
+    }
 
     > p {
       color: #ffffff;
-      font-weight: 100;
-      margin-right: 3rem;
-      opacity: 1;
-      letter-spacing: 0px;
-      text-align: left;
       font-size: 16px;
+      font-weight: 100;
+      letter-spacing: 0px;
+      margin: 1rem 3rem 0rem 0rem;
+      opacity: 1;
+      text-align: left;
+
+      @media screen and (max-width: 700px) {
+        margin: 0rem;
+      }
     }
   }
 
   > img {
-    width: 60%;
-    max-width: 20rem;
     height: fit-content;
     margin-left: 3rem;
+    max-width: 20rem;
+    width: 60%;
+
+    @media screen and (max-width: 700px) {
+      margin: 0rem;
+      margin-top: 2rem;
+      max-width: 80%;
+      width: 100%;
+    }
   }
 }
 
 .characteristics_iguana {
-  width: 100%;
-  text-align: center;
-  padding: 5rem 0rem;
   background-color: #1e1a13;
   color: #ffffff;
+  padding: 5rem 0rem;
+  text-align: center;
+  width: 100%;
 
   > h2 {
-    margin: 0;
     font-size: 40px;
+    margin: 0;
     margin-bottom: 50px;
   }
 
@@ -89,17 +107,17 @@ html {
 }
 
 .images_iguana {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  padding: 5rem 0rem;
   background-color: #000000;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 5rem 0rem;
+  width: 100%;
 
   > img {
-    width: 100%;
-    max-width: 350px;
     margin-right: 16px;
+    max-width: 350px;
+    width: 100%;
 
     @media screen and (max-width: 1100px) {
       margin-top: 16px;
@@ -112,27 +130,27 @@ html {
   padding: 40px 0px;
 
   > h3 {
-    margin: 0px;
     color: white;
-    text-align: center;
+    margin: 0px;
     opacity: 0.8;
+    text-align: center;
   }
 }
 
 .back__index {
   border-radius: 6px 6px 6px 6px;
   bottom: 5px;
-  right: 5px;
   margin-left: 10px;
   padding: 10px 0 0;
   position: fixed;
+  right: 5px;
   text-align: center;
   width: 90px;
   z-index: 15;
 
   > p > a > img {
-    width: 100%;
-    max-width: 45px;
     height: 45px;
+    max-width: 45px;
+    width: 100%;
   }
 }
