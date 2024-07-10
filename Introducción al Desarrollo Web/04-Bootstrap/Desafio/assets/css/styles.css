@@ -9,20 +9,6 @@ nav {
   background-color: #28a745;
 }
 
-.destination {
-  > div > .card {
-    width: 100%;
-    max-width: 30%;
-    margin-left: 30px;
-    margin-top: 2rem;
-    padding: 0;
-
-    @media screen and (max-width:375px) {
-      max-width: 80%;
-      margin-left: 0px;
-    }
-  }
-}
 
 .formCuppon {
   background-color: #28a745;
