@@ -1,18 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
+
+/* Colores provenientes de la maqueta */
 
 nav {
   background-color: #28a745;
 }
-
-
 .formCuppon {
   background-color: #28a745;
-
 }
 
 .back__index {
