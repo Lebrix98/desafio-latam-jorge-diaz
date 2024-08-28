@@ -32,15 +32,15 @@
 
     .MyInfo {
       h2 {
-        font-family: "Roboto Bold";
+        font-family: "Roboto";
         font-size: 1.5rem;
-        font-weight: 200;
+        font-weight: 400;
       }
       p {
         color: #828485;
-        font-family: "Roboto Bold";
+        font-family: "Roboto";
         font-size: 0.8rem;
-        font-weight: 200;
+        font-weight: 300;
       }
     }
 
@@ -65,13 +65,15 @@
       background-color: #a491d2;
       border: none;
       color: #fff;
-      font-family: "Roboto Bold";
+      font-family: "Roboto";
       font-size: 1.1rem;
-      font-weight: 200;
+      font-weight: 400;
       margin: 3rem;
       padding: 1rem;
       width: 50%;
+      cursor: pointer;
     }
+
   }
 
   > .Contact {
@@ -89,17 +91,61 @@
 
       div {
         h2 {
-          font-family: "Roboto Bold";
+          font-family: "Roboto";
           font-size: 1.2rem;
-          font-weight: 200;
+          font-weight: 400;
         }
 
         p {
-          font-family: "Roboto Bold";
+          font-family: "Roboto";
           font-size: 1rem;
-          font-weight: 200;
+          font-weight: 300;
         }
       }
     }
   }
+}
+
+.Section_chat {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #fff;
+
+  img {
+    width: 100%;
+    max-width: 24rem;
+  }
+
+  h2 {
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 3.7rem;
+    margin-top: 1rem;
+  }
+
+  p {
+    width: 100%;
+    max-width: 40%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Roboto';
+    font-weight: 300;
+    letter-spacing: 0.1px;
+  }
+}
+
+.Volver {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  right: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
 }
