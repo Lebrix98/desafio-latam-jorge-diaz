@@ -38,3 +38,16 @@ div {
 h3 {
     padding-left: 20px;
 }
+
+.Volver {
+    border-radius: 6px 6px 6px 6px;
+    bottom: 5px;
+    right: 5px;
+    margin-left: 10px;
+    padding: 10px 0 0;
+    position: fixed;
+    text-align: center;
+    width: 90px;
+    z-index: 15;
+  }
+  
