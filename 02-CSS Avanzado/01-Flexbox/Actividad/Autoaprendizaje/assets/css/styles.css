@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ActUno {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  p {
+    width: 25%;
+  }
+}
+
+.ActDosTres {
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  div {
+    padding: 2rem;
+    img {
+      width: 100%;
+      max-width: 250px;
+      border: 1px solid black;
+      border-radius: 99px;
+    }
+    p {
+      text-align: center;
+      text-decoration: underline;
+      color: red;
+    }
+  }
+}
+
+.ActCuatro {
+  width: 100%;
+  background-color: aquamarine;
+  ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    height: 4em;
+    li {
+      list-style: none;
+      padding: 1rem;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.ActCinco {
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-item {
+    width: 10em;
+    height: 10em;
+    border: solid 1px gray;
+  }
+}
+
+.ActSeis {
+  .ExList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 9em;
+    background-color: aqua;
+    /* min-height: 100vh; */
+  }
+}
+
+.ActSiete {
+  menu {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  menu li {
+    padding: 1em;
+    list-style: none;
+  }
+  menu a {
+    text-decoration: none;
+    color: white;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  menu a:hover {
+    color: white;
+  }
+  menu ul {
+    display: flex;
+  }
+}
