@@ -79,7 +79,7 @@
   }
 }
 
-.ActSiete {
+.TryNav {
   menu {
     background-color: black;
     margin: 0;
@@ -101,5 +101,23 @@
   }
   menu ul {
     display: flex;
+  }
+}
+
+.ActSiete {
+  .cards {
+    display: flex;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 10em;
+    border: solid 1px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .card-body {
+    /* Afecta la distribución de los componentes de la Card */
+    flex-grow: 1;
   }
 }
