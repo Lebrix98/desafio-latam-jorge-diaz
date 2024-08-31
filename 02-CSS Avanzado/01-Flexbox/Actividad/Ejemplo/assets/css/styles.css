@@ -1,0 +1,346 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
+}
+
+.Navbar_Cube {
+  background-color: red;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0.5rem 0rem;
+  width: 100%;
+
+  > .Title {
+    align-items: center;
+    color: white;
+    display: flex;
+
+    h1 {
+      font-size: 1.1rem;
+      font-weight: 100;
+    }
+
+    i {
+      padding: 0.3rem;
+    }
+
+    i:nth-child(1) {
+      margin-left: 1rem;
+    }
+  }
+
+  > .Links {
+    align-items: center;
+    display: flex;
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        padding: 0rem 2rem;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.Header_Cube {
+  align-content: center;
+  background-image: url("./../img/color-3198094_1280.jpg");
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+
+  h4 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  > .Logo {
+    align-items: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 2px black;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+
+    i {
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+  }
+
+  > .ButtonText {
+    h3 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 2px black;
+    }
+
+    button {
+      background-color: rgb(255, 60, 0);
+      color: white;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      text-shadow: 1px 1px 1px black;
+    }
+
+    button:hover {
+      background-color: rgb(207, 50, 2);
+      color: black;
+    }
+  }
+}
+
+.AboutUs_Cube {
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    355deg,
+    rgba(253, 29, 29, 1) 20%,
+    rgba(247, 227, 38, 1) 87%
+  );
+  display: flex;
+  padding: 3rem 0rem;
+  width: 100%;
+
+  > .Content_About {
+    align-items: center;
+    background-color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    padding: 1rem;
+    width: 90%;
+
+    > .AboutUs {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 40%;
+      }
+
+      div {
+        padding-left: 1rem;
+        width: 60%;
+        h2 {
+          font-size: 1.5rem;
+          font-weight: 900;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    > .Employees {
+      display: flex;
+      justify-content: space-evenly;
+      margin-top: 1rem;
+      width: 100%;
+
+      div {
+        background-color: #e7e7e7;
+        max-width: 8rem;
+        text-align: center;
+        width: 100%;
+
+        img {
+          border: 5px double orange;
+          border-radius: 99px;
+          margin-top: 0.5rem;
+          max-width: 6.5rem;
+          width: 100%;
+        }
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.Galery_Cube {
+  padding: 3rem 0rem;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  background: rgb(253, 29, 29);
+  background: linear-gradient(
+    355deg,
+    rgba(253, 29, 29, 1) 20%,
+    rgba(247, 227, 38, 1) 87%
+  );
+
+  h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+  }
+
+  > .TopImg {
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    img {
+      border: 5px double orange;
+      border-radius: 10px;
+    }
+
+    img:nth-child(1) {
+      width: 30%;
+    }
+
+    img:nth-child(2) {
+      width: 15%;
+    }
+
+    img:nth-child(3) {
+      width: 20%;
+    }
+
+    img:nth-child(4) {
+      width: 30%;
+    }
+  }
+
+  > .BottomImg {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    img {
+      width: 30%;
+      border: 5px double orange;
+      border-radius: 10px;
+    }
+  }
+}
+
+.Contact_Cube {
+  width: 100%;
+  background-image: url("./../img/color-3198094_1280.jpg");
+  background-size: cover;
+  padding: 3rem 0rem;
+  form {
+    padding: 2rem;
+    width: 40%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.7);
+
+    h2 {
+      color: white;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      label {
+        font-size: 1.2rem;
+        color: #fff;
+      }
+
+      input {
+        width: 100%;
+        height: 1.8rem;
+      }
+    }
+
+    div:nth-child(4) {
+      input {
+        height: 3rem;
+      }
+    }
+
+    button {
+      width: 100%;
+      background-color: rgb(255, 60, 0);
+      color: white;
+      cursor: pointer;
+      font-size: 1.1rem;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+    }
+
+    button:hover {
+      background-color: rgb(207, 50, 2);
+      color: black;
+    }
+  }
+}
+
+.Footer_Cube {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  color: white;
+}
+
+.Float {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  right: 0px;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+
+  > p > a > img {
+    max-width: 40px;
+    width: 100%;
+  }
+
+  > p > a > img:hover {
+    max-width: 45px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 50px;
+  }
+}
