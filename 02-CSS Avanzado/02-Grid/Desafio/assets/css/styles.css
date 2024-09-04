@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* GRID */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer";
+  grid-template-columns: auto 80%;
+  grid-template-rows: 3rem auto 3rem;
+  height: auto;
+}
+
+header {
+  background-color: #d1e9f6;
+  grid-area: header;
+}
+
+menu {
+  background-color: #f1d3ce;
+  grid-area: menu;
+}
+
+main {
+  background-color: #eecad5;
+  grid-area: main;
+}
+
+footer {
+  background-color: #f6eacb;
+  grid-area: footer;
+}
+
+/* FLEXBOX */
+
+.EcoHeader {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+}
+
+.EcoMenu {
+  align-items: center;
+
+  display: flex;
+  flex-flow: column wrap;
+  padding-top: 1rem;
+  width: 100%;
+
+  h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    width: 60%;
+  }
+
+  div {
+    padding-top: 1.2rem;
+    width: 60%;
+
+    > ul {
+      list-style: none;
+
+      > li {
+        font-size: 0.8rem;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+        > span {
+          color: grey;
+          letter-spacing: 1px;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+.EcoMain {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+
+  .EcoMainImg {
+    max-width: min-content;
+    padding: 1rem;
+    width: 100%;
+
+    section {
+      align-items: center;
+      background-color: #d7d7d7;
+      border: 2px dashed grey;
+      border-bottom: 0px;
+      display: flex;
+      flex-flow: column wrap;
+      height: 20rem;
+
+      img {
+        max-width: 15rem;
+      }
+      h2 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        padding: 0.5rem;
+      }
+      p {
+        font-size: 0.8rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+      }
+    }
+
+    button {
+      background-color: #d1e9f6;
+      border: 2px dashed grey;
+      cursor: pointer;
+      padding: 0.5rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #9dbdff;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+.EcoFooter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.Volver {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  right: 5px;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+}
