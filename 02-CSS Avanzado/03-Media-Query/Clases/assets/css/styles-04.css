@@ -1,0 +1,26 @@
+
+
+button {
+    padding: 5px;
+    color: black;
+    background-color: green;
+}
+
+
+@media (min-width: 576px) {
+    button {
+        border-radius: 15px;
+    }
+}
+
+@media (min-width:768px ) {
+    button {
+        color: white;
+    }
+}
+
+@media (min-width: 992px) {
+    button {
+        display: none;
+    }
+}
