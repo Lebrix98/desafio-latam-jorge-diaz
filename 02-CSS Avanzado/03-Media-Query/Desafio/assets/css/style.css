@@ -58,15 +58,17 @@ menu {
     padding: 0.5rem;
     .title {
       align-items: center;
+      flex-flow: row wrap;
+      justify-content: center;
       display: flex;
 
       i {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin-right: 0.5rem;
       }
 
       h1 {
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 500;
         letter-spacing: 1px;
         text-decoration: underline;
@@ -75,9 +77,30 @@ menu {
     }
   }
 
-  /* .links {
+  .links {
+    ul {
+      display: flex;
+      flex-flow: column wrap;
+      align-content: center;
 
-    } */
+      li {
+        list-style: none;
+        text-align: center;
+        padding: 0.4rem 0rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+          cursor: pointer;
+          font-size: 1rem;
+        }
+
+        a:hover {
+          color: gray;
+        }
+      }
+    }
+  }
 
   .burger_menu {
     display: none;
@@ -86,6 +109,16 @@ menu {
   @media (max-width: 576px) {
     div {
       flex-flow: row wrap;
+
+      .title {
+        i {
+          font-size: 1.4rem;
+        }
+
+        h1 {
+          font-size: 1.2rem;
+        }
+      }
 
       .links {
         display: none;
@@ -113,7 +146,7 @@ section {
     width: 100%;
 
     label {
-      font-size: 1.2rem;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 1px;
       text-align: center;
@@ -121,10 +154,21 @@ section {
 
     select {
       border-radius: 10px;
-      font-size: 1rem;
-      max-width: 60%;
+      font-size: 0.8rem;
+      max-width: 90%;
       padding: 0.5rem;
       width: 100%;
+    }
+  }
+
+  @media (max-width: 576px) {
+    label {
+      font-size: 1.2rem;
+    }
+
+    select {
+      font-size: 1rem;
+      max-width: 80%;
     }
   }
 }
@@ -132,11 +176,13 @@ section {
 main {
   align-content: center;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   width: 100%;
   .products {
-    margin: 0 auto;
+    margin: none;
+    display: flex;
+    flex-flow: row wrap;
     .product {
       align-items: center;
       background-color: #f0ebe3;
@@ -145,6 +191,7 @@ main {
       box-shadow: 1px 1px 4px #e7e7e7;
       display: flex;
       flex-flow: column wrap;
+      justify-content: space-between;
       margin: 1rem;
       max-width: min-content;
       padding: 1rem;
@@ -194,31 +241,83 @@ main {
         font-weight: 100;
         margin-bottom: 1rem;
         padding: 0.5rem 0rem;
-        width: 8%;
+        width: 3%;
+      }
+
+      div:hover {
+        background-color: #d7d7d7;
+        color: #2e5efd;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .products {
+      flex-flow: column wrap;
+    }
+
+    .pages {
+      div {
+        div {
+          width: 8%;
+        }
       }
     }
   }
 }
 
 footer {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding: 0.5rem 0rem;
+  color: white;
+
+  .icons {
+    font-size: 1.2rem;
+    i {
+      padding: 0rem 0.2rem;
+    }
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 600;
     width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    text-align: center;
+    max-width: 80%;
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 576px) {
+
     padding: 1rem 0rem;
-    color: white;
 
     .icons {
-        font-size: 1.5rem;
-        i {
-            padding: 0rem 0.2rem;
-        }
+      font-size: 1.5rem;
+      i {
+        padding: 0rem 0.2rem;
+      }
     }
 
     h3 {
-        font-size: 1.2rem;
-        font-weight: 600;
+      font-size: 1.2rem;
+      width: 100%;
+      margin-top: 0rem;
     }
+  }
+}
+
+.Volver {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  right: 5px;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
 }
