@@ -13,6 +13,7 @@
     "menu main"
     "footer main";
   grid-template-columns: auto 1fr;
+  height: 100vh;
 
   @media (width <= 572px) {
     grid-template-areas:
