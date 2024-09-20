@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* GRID */
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu section"
+    "menu main"
+    "footer footer";
+  grid-template-columns: auto 80%;
+  grid-template-rows: 5rem auto 3rem;
+  height: 100vh;
+
+  @media (width <= 572px) {
+    grid-template-areas:
+      "menu"
+      "section"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+menu {
+  background-color: #d6efd8;
+  grid-area: menu;
+}
+
+section {
+  background-color: #80af81;
+  grid-area: section;
+}
+
+main {
+  background-color: #508d4e;
+  grid-area: main;
+}
+
+footer {
+  background-color: #1a5319;
+  grid-area: footer;
+}
+
+/* FLEXBOX */
+
+menu {
+  width: 100%;
+  padding: 1rem;
+  .title {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 4rem;
+      border: 2px solid #1a5319;
+      border-radius: 99px;
+      object-fit: cover;
+      transition: 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h1 {
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 900;
+      animation: titleColors 1s linear infinite;
+      animation-direction: alternate;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-flow: column wrap;
+    ul {
+      li {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        a {
+          margin-top: 0.6rem;
+          text-decoration: none;
+          color: #1a5319;
+          font-size: 1rem;
+        }
+
+        a:hover {
+          color: #508d4e;
+        }
+      }
+    }
+  }
+
+  @media (width <= 572px) {
+    padding: 0;
+  }
+}
+
+section {
+  width: 100%;
+  .form_select {
+    align-content: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 1rem 0rem;
+    width: 100%;
+
+    label {
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+
+    select {
+      border-radius: 10px;
+      font-size: 0.8rem;
+      max-width: 90%;
+      padding: 0.5rem;
+      width: 100%;
+    }
+  }
+
+  @media (width <= 572px) {
+    label {
+      font-size: 1.2rem;
+    }
+
+    select {
+      font-size: 1rem;
+      max-width: 80%;
+    }
+  }
+}
+
+/* Keyframes */
+
+@keyframes titleColors {
+  0% {
+    color: #1a5319;
+  }
+
+  100% {
+    color: #508d4e;
+  }
+}

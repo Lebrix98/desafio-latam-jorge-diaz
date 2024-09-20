@@ -1,0 +1,25 @@
+
+div  {
+    margin: 4rem;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  transform: rotate(45deg) scale(1.5);
+}
+
+.box45 {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: rotate(45deg);
+}
+
+.box30 {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transform: rotate(30deg) scale(2);
+}
