@@ -23,7 +23,7 @@
       "main"
       "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 8rem 5rem auto 5rem;
+    grid-template-rows: 8rem 5rem auto 6rem;
     height: auto;
   }
 }
@@ -75,9 +75,36 @@ menu {
       animation-direction: alternate;
     }
 
+    @media (width <= 1070px) {
+      padding: 0rem;
+      padding-top: 1rem;
+      flex-flow: column wrap;
+      img {
+        width: 100%;
+        max-width: 5rem;
+      }
+
+      h1 {
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+      }
+    }
+
     @media (width <= 572px) {
       justify-content: center;
-      margin-top: 0.8rem;
+      margin-top: 0rem;
+      flex-flow: row wrap;
+      img {
+        width: 100%;
+        max-width: 4rem;
+        margin-right: 0.5rem;
+      }
+
+      h1 {
+        margin: 0.5rem 0rem;
+        font-size: 1.4rem;
+      }
     }
   }
 
@@ -111,8 +138,8 @@ menu {
     }
   }
 
-  @media (width <= 572px) {
-    padding: 0;
+  @media (width <= 1070px) {
+    padding: 0rem;
   }
 }
 
@@ -221,9 +248,10 @@ main {
 
 footer {
   align-content: center;
+  align-items: center;
   color: white;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   /* padding: 0.5rem 0rem; */
   text-align: center;
@@ -237,15 +265,25 @@ footer {
   }
 
   h3 {
+    width: 100%;
     font-size: 1rem;
     font-weight: 600;
+    max-width: 20%;
+  }
+
+  @media (width <= 1000px) {
+    flex-flow: column wrap;
+
+    
+  h3 {
     margin-top: 0.5rem;
-    max-width: 80%;
-    width: 100%;
+    max-width: 50%;
+  }
   }
 
   @media (width <= 572px) {
     padding: 1rem 0rem;
+    flex-flow: column wrap;
 
     .icons {
       font-size: 1.5rem;
@@ -256,11 +294,51 @@ footer {
 
     h3 {
       font-size: 1.2rem;
-      margin-top: 0rem;
-      width: 100%;
+      margin-top: 0.5rem;
+      max-width: 100%;
     }
   }
 }
+
+.Volver {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  right: 5px;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+}
+
+.Float {
+
+  display: none;
+
+  @media (width <= 572px)  {
+    display: inline;
+    border-radius: 6px 6px 6px 6px;
+    bottom: 5px;
+    position: fixed;
+    left: 0px;
+    text-align: center;
+    width: 90px;
+    z-index: 15;
+  
+    > p > a > img {
+      max-width: 40px;
+      width: 100%;
+    }
+  
+    > p > a > img:hover {
+      max-width: 45px;
+      width: 100%;
+    }
+  }
+
+}
+
 
 /* Keyframes */
 
