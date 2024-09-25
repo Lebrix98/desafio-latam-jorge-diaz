@@ -21,5 +21,9 @@ div  {
     width: 100px;
     height: 100px;
     background-color: red;
+    transition: transform 1s linear;
+}
+
+.box30:hover {
     transform: rotate(30deg) scale(2);
 }

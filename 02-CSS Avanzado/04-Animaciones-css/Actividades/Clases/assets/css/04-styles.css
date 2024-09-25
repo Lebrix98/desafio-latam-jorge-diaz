@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    img:nth-child(1) {
+        margin-top: -105px;
+    }
+
+    img:nth-child(2) {
+        margin-top: -81.5px;
+        animation: move 3s linear infinite;
+        height: 15rem;
+    }
+
+}
+
+@keyframes move {
+    0% {
+        width: 5%;
+    }
+    50% {
+        width: 100%;
+    }
+    100% {
+        width: 5%;
+    }
+  }
