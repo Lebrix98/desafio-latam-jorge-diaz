@@ -259,8 +259,11 @@ footer {
 
   .icons {
     font-size: 1.2rem;
-    i {
-      padding: 0rem 0.2rem;
+    a {
+      color: white;
+      i {
+        padding: 0rem 0.2rem;
+      }
     }
   }
 
@@ -268,17 +271,16 @@ footer {
     width: 100%;
     font-size: 1rem;
     font-weight: 600;
-    max-width: 20%;
+    max-width: 15%;
   }
 
   @media (width <= 1000px) {
     flex-flow: column wrap;
 
-    
-  h3 {
-    margin-top: 0.5rem;
-    max-width: 50%;
-  }
+    h3 {
+      margin-top: 0.5rem;
+      max-width: 50%;
+    }
   }
 
   @media (width <= 572px) {
@@ -313,10 +315,9 @@ footer {
 }
 
 .Float {
-
   display: none;
 
-  @media (width <= 572px)  {
+  @media (width <= 572px) {
     display: inline;
     border-radius: 6px 6px 6px 6px;
     bottom: 5px;
@@ -325,20 +326,18 @@ footer {
     text-align: center;
     width: 90px;
     z-index: 15;
-  
+
     > p > a > img {
       max-width: 40px;
       width: 100%;
     }
-  
+
     > p > a > img:hover {
       max-width: 45px;
       width: 100%;
     }
   }
-
 }
-
 
 /* Keyframes */
 
