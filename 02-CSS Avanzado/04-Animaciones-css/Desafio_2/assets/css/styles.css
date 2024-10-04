@@ -16,7 +16,7 @@
   grid-template-columns: auto 80%;
   grid-template-rows: 10% 90% auto;
 
-  @media (width <= 572px) {
+  @media (width <= 1024px) {
     grid-template-areas:
       "menu"
       "section"
@@ -24,8 +24,18 @@
       "footer";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
+  }
+
+  @media (width <= 572px) {
     background-image: url("./../img/guts_theme_movile.jpg");
     background-size: contain;
+    grid-template-areas:
+      "menu"
+      "section"
+      "main"
+      "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
   }
 }
 
@@ -105,10 +115,11 @@ menu {
     }
   }
 
-  @media (width <= 572px) {
+  @media (width <= 1024px) {
     flex-flow: column wrap;
     height: fit-content;
     .img_move {
+      width: 50%;
       img {
         animation: MoveX 8s linear infinite;
       }
@@ -116,6 +127,53 @@ menu {
 
     .title {
       width: 100%;
+      h1 {
+        font-size: 5rem;
+        letter-spacing: 20px;
+        text-align: center;
+        width: 80%;
+      }
+      .links {
+        width: 100%;
+
+        ul {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: center;
+          margin-top: 1rem;
+          li {
+            margin: 1.5rem;
+            padding: 1.5rem;
+
+            a {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (width <= 572px) {
+    flex-flow: column wrap;
+    height: fit-content;
+    .img_move {
+      width: 20%;
+      img {
+        animation: MoveX 8s linear infinite;
+      }
+    }
+
+    .title {
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+        letter-spacing: 2.5px;
+        text-align: center;
+        width: 50%;
+      }
+
       .links {
         width: 100%;
         ul {
@@ -126,6 +184,10 @@ menu {
           li {
             margin: 0.5rem;
             padding: 0.5rem;
+
+            a {
+              font-size: 1rem;
+            }
           }
         }
       }
@@ -161,6 +223,28 @@ section {
     width: 15%;
   }
 
+  @media (width <= 1024px) {
+    flex-flow: row wrap;
+    height: fit-content;
+
+    .description {
+      width: 70%;
+      p {
+        background-color: rgba(215, 215, 215, 1);
+        margin: 1rem;
+        height: 10vh;
+        font-size: 1.2rem;
+      }
+    }
+
+    img {
+      align-self: center;
+      display: flex;
+      max-width: 10rem;
+      width: 100%;
+    }
+  }
+
   @media (width <= 572px) {
     flex-flow: column wrap;
     height: fit-content;
@@ -170,14 +254,9 @@ section {
       p {
         background-color: rgba(215, 215, 215, 1);
         margin: 1rem;
+        height: auto;
+        font-size: 1rem;
       }
-    }
-
-    img {
-      display: flex;
-      align-self: center;
-      max-width: 10rem;
-      width: 100%;
     }
   }
 }
@@ -228,14 +307,49 @@ main {
     }
   }
 
-  @media (width <= 572px) {
+  @media (width <= 1024px) {
     .products {
+      flex-flow: row wrap;
       margin: 0 auto;
-      flex-flow: column wrap;
 
       .product {
+        margin: 2rem;
+        padding: 2.5rem;
         img {
+          width: 100%;
+          max-width: 40rem;
+        }
+
+        h2 {
+          font-size: 1.4rem;
+        }
+  
+        h4 {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  @media (width <= 572px) {
+    .products {
+      flex-flow: column wrap;
+      margin: 0 auto;
+
+      .product {
+        margin: 1rem;
+        padding: 1.5rem;
+        img {
+          width: 100%;
           max-width: 20rem;
+        }
+
+        h2 {
+          font-size: 1.1rem;
+        }
+  
+        h4 {
+          font-size: 1.1rem;
         }
       }
     }
@@ -263,14 +377,19 @@ footer {
     }
   }
 
+  @media (width <= 1024px) {
+    height: 5vh;
+  }
+
   @media (width <= 572px) {
+    height: auto;
     flex-flow: row wrap;
     width: 100%;
-  
+
     h2 {
       font-size: 0.8rem;
     }
-  
+
     .socialMedia {
       align-items: center;
       display: flex;
@@ -291,16 +410,15 @@ footer {
   position: fixed;
   right: 5px;
   text-align: center;
-  width: 90px;
   z-index: 15;
 
   @media (width <= 572px) {
-    right: 10px;
+    right: 50px;
 
     p > a > img {
-      width: 100%;
-      max-width: 30px;
       height: fit-content;
+      max-width: 20px;
+      width: 100%;
     }
   }
 }
@@ -309,26 +427,21 @@ footer {
   display: none;
 
   @media (width <= 572px) {
-    display: inline;
     border-radius: 6px 6px 6px 6px;
     bottom: 5px;
+    display: inline;
+    left: 50px;
     position: fixed;
-    left: 10px;
     text-align: center;
-    width: 90px;
     z-index: 15;
 
     > p > a > img {
-      max-width: 30px;
-      width: 100%;
       background-color: #d7d7d7;
       border-radius: 99px;
-    }
-
-    > p > a > img:hover {
-      max-width: 45px;
+      max-width: 20px;
       width: 100%;
     }
+
   }
 }
 
