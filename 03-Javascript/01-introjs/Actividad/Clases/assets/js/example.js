@@ -25,7 +25,7 @@ console.log("Ejercicio 2 check");
 // Ejercicio 3
 
 var adress = document.querySelector(".direccion");
-var departament = document.querySelector(".numero");
+var departament = document.querySelector(".departamento");
 var commune = document.querySelector(".comuna");
 
 adress.innerHTML = "_____________";
@@ -33,7 +33,7 @@ departament.innerHTML = "_____________";
 commune.innerHTML = "_____________";
 
 // var info1 = prompt("Ingrese su Dirección");
-// var info2 = prompt("Ingrese su Numeración");
+// var info2 = prompt("Ingrese su Departamento");
 // var info3 = prompt("Ingrese su Comuna");
 
 // if (info1 !== null && info1.length > 0) {
@@ -53,8 +53,8 @@ var image = document.querySelector(".imagen");
 image.style.width = "50%";
 image.style.heigth = "50%";
 
-// var info1 = prompt("Cuanto desea redondear la imagen")
+var info1 = prompt("Cuanto desea redondear la imagen")
 
-// image.style.borderRadius = `${Number(info1)}%`
+image.style.borderRadius = `${Number(info1)}%`
 
 console.log("Ejercicio 4 check");

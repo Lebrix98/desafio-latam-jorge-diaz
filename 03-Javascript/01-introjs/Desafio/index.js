@@ -1,25 +1,32 @@
 // Variables
 const precio = 400000;
 let i = 0;
-const value = precio * i;
 
 // Elements
 var count = document.querySelector(".cantidad");
+var precioSpan = document.querySelector(".precio-inicial");
+var total = document.querySelector(".valor-total");
 
-precioSpan = document.querySelector(".precio-inicial");
+// Initialize
 precioSpan.innerHTML = precio;
-
-total = document.querySelector(".valor-total");
-total.innerHTML = value;
-
+total.innerHTML = precio * i;
 
 // Buttons
 function btnAdd() {
   i++;
   count.innerHTML = i;
+  updateTotal();
 }
 
 function btnSubtract() {
-  i--;
-  count.innerHTML = i;
+  if(i > 0){
+    i--;
+    count.innerHTML = i;
+    updateTotal();
+  }
+}
+
+function updateTotal() {
+  const value = precio * i;
+  total.innerHTML = value;
 }
