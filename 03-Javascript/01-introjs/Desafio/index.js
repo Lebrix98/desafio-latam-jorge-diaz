@@ -8,25 +8,25 @@ var precioSpan = document.querySelector(".precio-inicial");
 var total = document.querySelector(".valor-total");
 
 // Initialize
-precioSpan.innerHTML = precio;
+precioSpan.innerHTML = precio.toLocaleString();
 total.innerHTML = precio * i;
 
 // Buttons
 function btnAdd() {
   i++;
   count.innerHTML = i;
-  updateTotal();
+  funcUpdate();
 }
 
 function btnSubtract() {
-  if(i > 0){
+  if (i > 0) {
     i--;
     count.innerHTML = i;
-    updateTotal();
+    funcUpdate();
   }
 }
 
-function updateTotal() {
-  const value = precio * i;
-  total.innerHTML = value;
+function funcUpdate() {
+  var valTotal = precio * i;
+  total.innerHTML = valTotal.toLocaleString();
 }
