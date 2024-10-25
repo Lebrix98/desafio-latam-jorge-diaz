@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Autoaprendizaje</title>
+  </head>
+  <body>
+    <h2>Autoaprendizaje</h2>
+
+    <p>
+      Indice de Masa Corporal (IMC) : <strong><span id="valor"></span></strong>
+    </p>
+    <input id="peso" type="text" />
+    <input id="altura" type="text" />
+    <button onclick="CalculateIMC()">Calcular</button>
+    <p style="padding: 1rem 0rem"></p>
+    <p>Comprobar Usuario autenticado</p>
+    <p id="user"></p>
+    <input id="email" type="text" />
+    <input id="pasword" type="password" />
+    <button onclick="CheckEmail()">Comprobar</button>
+    <p style="padding: 1rem 0rem"></p>
+    <p id="empty"></p>
+    <label for="salario">Salario</label>
+    <input name="salario" id="salario" type="number" />
+    <label for="salario-anterior">Salario Anterior</label>
+    <input name="salario-anterior" id="salario-anterior" type="number" />
+    <button onclick="emptyField()">Comprobar</button>
+    <!-- <p style="padding: 1rem 0rem"></p>
+    <p id="textValue"></p>
+    <label for="opt1">Opción 1</label>
+    <input name="opt1" id="opt1" type="checkbox" />
+    <label for="opt2">Opción 2</label>
+    <input name="opt2" id="opt2" type="checkbox" />
+    <button onclick="CheckedOtp()">Comprobar</button> -->
+    <p style="padding: 1rem 0rem"></p>
+    <p id="textValue"></p>
+    <label for="opt1">Opción 1</label>
+    <input name="opt1" id="opt1" type="checkbox" />
+    <label for="opt2">Opción 2</label>
+    <input name="opt2" id="opt2" type="checkbox" />
+    <label for="opt3">Opción 3</label>
+    <input name="opt3" id="opt3" type="checkbox" />
+    <button onclick="ValidateOtp()">Revisar</button>
+    <button id="btnEnviar" onclick="sendInfo()" disabled="true">Enviar</button>
+    <p style="padding: 1rem 0rem"></p>
+    <input id="input-1" type="number">
+    <button id="btnEnviar" onclick="defect()">Enviar</button>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

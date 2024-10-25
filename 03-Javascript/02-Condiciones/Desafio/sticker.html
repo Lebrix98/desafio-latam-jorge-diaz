@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/stickers.css" />
+    <title>Sticker</title>
+</head>
+<body>
+    <section id="StickerDesafio">
+        <h4 class="condition">Puedes llevar hasta 10 stickers en total</h4>
+        <section class="stickers">
+          <div>
+            <img src="./assets/img/Bangvolver.png" alt="" />
+            <div>
+              <h4>Bangvolver</h4>
+              <input type="number" id="num1" min="0" />
+            </div>
+          </div>
+          <div>
+            <img src="./assets/img/Butler.png" alt="" />
+            <div>
+              <h4>Butler</h4>
+              <input type="number" id="num2" min="0" />
+            </div>
+          </div>
+          <div>
+            <img src="./assets/img/Sharkboo.png" alt="" />
+            <div>
+              <h4>Sharkboo</h4>
+              <input type="number" id="num3" min="0" />
+            </div>
+          </div>
+        </section>
+        <article class="count">
+          <p id="textTotal"></p>
+          <button onclick="calcTotal()">Verificar</button>
+        </article>
+      </section>
+
+      <div class="Volver">
+        <p>
+          <a href="./../Desafio/index.html">
+            <img
+              src="./../../../assets/img/volverBlack.png"
+              width="45"
+              height="45"
+              alt="Volver"
+            />
+          </a>
+        </p>
+      </div>
+      <script src="./assets/js/sticker.js"></script>
+</body>
+</html>

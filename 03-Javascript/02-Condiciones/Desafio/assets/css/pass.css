@@ -1,0 +1,49 @@
+.subTitle {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.numericPass {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    input {
+        margin: 0.5rem;
+        text-align: center;
+    }
+}
+
+.validate {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+
+    button {
+      width: 100%;
+      max-width: 10rem;
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+    p {
+      text-align: center;
+    }
+}
+
+.Volver {
+    border-radius: 6px 6px 6px 6px;
+    bottom: 5px;
+    right: 5px;
+    margin-left: 10px;
+    padding: 10px 0 0;
+    position: fixed;
+    text-align: center;
+    width: 90px;
+    z-index: 15;
+  }
