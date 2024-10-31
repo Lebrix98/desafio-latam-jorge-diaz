@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Funciones</title>
+  </head>
+  <body>
+    <h1>Funciones</h1>
+
+    <h2 id="id-2">hola</h2>
+
+    <div class="boxes">
+      <div id="rojo">
+        <button onclick="printBox('red', '#rojo')">Rojo</button>
+      </div>
+      <div id="azul">
+        <button onclick="printBox('blue', '#azul')">Azul</button>
+      </div>
+      <div id="amarillo">
+        <button onclick="printBox('yellow', '#amarillo')">Amarillo</button>
+      </div>
+    </div>
+
+    <div id="reset">
+      <button onclick="resetColors()">Reset</button>
+    </div>
+
+    <hr />
+
+    <div class="images">
+      <div id="img-1">
+        <img
+          src="./assets/img/Bangvolver.png"
+          alt=""
+          onclick="addBorder('img-1', 'text-1')"
+        />
+        <input id="text-1" type="text" />
+      </div>
+      <div id="img-2">
+        <img
+          src="./assets/img/Butler.png"
+          alt=""
+          onclick="addBorder('img-2', 'text-2')"
+        />
+        <input id="text-2" type="text" />
+      </div>
+      <div id="img-3">
+        <img
+          src="./assets/img/Sharkboo.png"
+          alt=""
+          onclick="addBorder('img-3', 'text-3')"
+        />
+        <input id="text-3" type="text" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="suma">
+
+        <input id="num-1" type="number">
+        <input id="num-2" type="number">
+
+        <button onclick="sumValue('num-1','num-2','result')">Sumar</button>
+
+        <h4 id="result"></h4>
+
+    </div>
+
+    <hr />
+
+    <div id="colorFondo" style="background-color: red">
+
+        <button onclick="getBkgColor('colorFondo', 'colorCheck')">¿Que color es?</button>
+        <h2 id="colorCheck"></h2>
+
+    </div>
+
+    <hr />
+
+    <div id="values">
+
+        <select id="selector">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+
+        <button onclick="getValue('selector','perfectText')">¿Es Mucho?</button>
+
+        <h3 id="perfectText"></h3>
+
+
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
