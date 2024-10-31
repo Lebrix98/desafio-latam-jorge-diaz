@@ -13,8 +13,8 @@
 
   div {
     width: 100%;
-    max-width: 20%;
-    height: 20%;
+    max-width: 150px;
+    height: 150px;
     border: 2px dashed black;
     margin: 0.5rem;
   }
