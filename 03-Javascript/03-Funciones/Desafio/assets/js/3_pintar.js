@@ -1,13 +1,14 @@
 /* Desafio => 2.1 */
 /* Distribución en las carpetas */
 
-const ele = document.getElementById("ele1");
 /* Desafio => 2.2 */
+// const ele = document.getElementById("ele1");
 // ele.addEventListener("click", () => {
 //   ele.style.backgroundColor = 'yellow';
 // });
 
 /* Desafio => 2.3 */
+const ele = document.getElementById("ele1");
 function pintar(color = "green") {
   ele.style.backgroundColor = color;
 }
