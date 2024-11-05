@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.product {
+  width: 250px;
+  padding: 10px;
+  background: lightgray;
+
+  img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  h6 {
+    margin-bottom: 1rem;
+  }
+}
+
+.content {
+  width: 100%;
+
+  .icons {
+    display: flex;
+    flex-flow: row wrap;
+    .icono {
+      align-items: center;
+      background-color: grey;
+      display: flex;
+      flex-flow: column;
+      font-size: 1.2rem;
+      margin: 1rem;
+      max-width: 20%;
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+}
