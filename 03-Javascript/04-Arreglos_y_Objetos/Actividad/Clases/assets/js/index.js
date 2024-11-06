@@ -105,7 +105,7 @@ const persona = {
 };
 
 console.log(
-  `El Hobbit de ${persona.nombre} ${persona.apellido} es: ${persona.hobby}`
+  `El hobby de ${persona.nombre} ${persona.apellido} es: ${persona.hobby}`
 );
 
 // Ejercicio 5 => Imprimir el producto, extrayendo los datos del obj

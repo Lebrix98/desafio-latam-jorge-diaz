@@ -1,69 +1,52 @@
 const propiedades_venta = [
   {
-    nombre: "Hola",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    baños: 0,
-    costo: 0,
+    nombre: "Departamento en Venta",
+    src: "./assets/img/venta_1.webp",
+    descripcion: "Vivir en Providencia significa tener todo a mano",
+    ubicacion: "Suecia 440, Los Leones, Providencia, RM (Metropolitana)",
+    habitaciones: 2,
+    baños: 2,
+    costo: 283235236,
     smoke: false,
     pets: true,
   },
   {
-    nombre: "Hola",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    baños: 0,
-    costo: 0,
-    smoke: false,
+    nombre: "Departamento en Venta",
+    src: "./assets/img/venta_2.webp",
+    descripcion:
+      "Edificio Del Río es ideal para aquellos amantes de la ciudad.",
+    ubicacion:
+      "Dr. Roberto Del Río Esquina Eliodoro Yáñez, Las Lilas, Providencia, RM (Metropolitana)",
+    habitaciones: 3,
+    baños: 2,
+    costo: 240646029,
+    smoke: true,
+    pets: false,
+  },
+  {
+    nombre: "Departamento en Venta",
+    src: "./assets/img/venta_3.webp",
+    descripcion: "Con la magia de Barrio Italia emerge Bilbao 514",
+    ubicacion:
+      "Av Francisco Bilbao 514, Providencia, Chile, Barrio Italia, Providencia, RM (Metropolitana)",
+    habitaciones: 2,
+    baños: 3,
+    costo: 190876742,
+    smoke: true,
     pets: true,
   },
   {
-    nombre: "Hola",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    baños: 0,
-    costo: 0,
+    nombre: "Departamento en Venta",
+    src: "./assets/img/venta_4.webp",
+    descripcion:
+      "Lyon Bilbao, para vivir más cómodos. ¡Aquí, la conexión y el estilo de vida que buscas se encuentran en un solo lugar!",
+    ubicacion:
+      "Avenida Ricardo Lyon 1887, Inés de Suárez, Providencia, RM (Metropolitana)",
+    habitaciones: 3,
+    baños: 2,
+    costo: 267930330,
     smoke: false,
-    pets: true,
-  },
-  {
-    nombre: "Hola",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    baños: 0,
-    costo: 0,
-    smoke: false,
-    pets: true,
-  },
-  {
-    nombre: "Hola",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    baños: 0,
-    costo: 0,
-    smoke: false,
-    pets: true,
-  },
-  {
-    nombre: "Hola",
-    src: "",
-    descripcion: "",
-    ubicacion: "",
-    habitaciones: 0,
-    baños: 0,
-    costo: 0,
-    smoke: false,
-    pets: true,
+    pets: false,
   },
 ];
 
@@ -95,7 +78,7 @@ for (let propSell of propiedades_venta) {
                   } Habitaciones |
                   <i class="fas fa-bath"></i> ${propSell.baños} Baños
                 </p>
-                <p><i class="fas fa-dollar-sign"></i> ${propSell.costo}</p>
+                <p><i class="fas fa-dollar-sign"></i> ${propSell.costo.toLocaleString()}</p>
                 ${
                   propSell.smoke
                     ? `<p class="text-danger">
