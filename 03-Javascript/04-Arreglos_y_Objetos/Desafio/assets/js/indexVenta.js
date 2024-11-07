@@ -82,11 +82,13 @@ const propiedades_venta = [
   },
 ];
 
+
 const cardSells = document.querySelector(".cartasVenta");
-let cardTexts = "";
+let cardTextsSells = "";
 
 for (let propSell of propiedades_venta) {
-  cardTexts += `
+  propSell.id <= 3
+    ? (cardTextsSells += `
     <div class="col-md-4 mb-4">
         <div class="card">
             <img
@@ -132,7 +134,8 @@ for (let propSell of propiedades_venta) {
               </div>
             </div>
           </div>
-    `;
+    `)
+    : "";
 }
 
-cardSells.innerHTML = cardTexts;
+cardSells.innerHTML = cardTextsSells;
