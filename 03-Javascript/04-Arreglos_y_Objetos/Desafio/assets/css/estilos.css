@@ -1,0 +1,32 @@
+.main-section {
+  background-image: url("../img/img-main.jpeg");
+  background-size: cover; /* La imagen cubrirá todo el ancho y largo */
+  background-position: center;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.card {
+  height: 100px;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.Volver {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 5px;
+  right: 5px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+}
