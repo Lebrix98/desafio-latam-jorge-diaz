@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d7d7d7;
+}
+
+.title {
+  margin: 1rem;
+  text-decoration: underline dashed;
+  font-size: 2.5rem;
+}
+
+.todo {
+  width: 100%;
+  max-width: 95%;
+  margin: 1rem;
+
+  .inpText {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+  }
+  .btnAdd {
+    width: 25%;
+    max-width: 15%;
+    padding: 0.5rem;
+    font-weight: 700;
+    background-color: lawngreen;
+    border-radius: 1.5rem;
+  }
+}
+
+.information {
+  width: 100%;
+  max-width: 95%;
+  margin: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  .count {
+    width: 20%;
+
+    .total {
+        margin-bottom: 0.4rem;
+    }
+  }
+  .list {
+    width: 50%;
+  }
+}
