@@ -51,5 +51,19 @@ body {
   }
   .list {
     width: 50%;
+
+    table > thead > tr > th:nth-child(1) {
+      width: 20%;
+    }
+
+    table {
+      width: 100%;
+      text-align: justify;
+      border: solid;
+    }
+
+    table > thead > tr > th:nth-child(2) {
+      width: 50%;
+    }
   }
 }
