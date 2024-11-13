@@ -27,8 +27,12 @@ const render = () => {
 
 btnAgregar.addEventListener("click", () => {
   let val = { id: Date.now(), name: invitadoInput.value };
-  array.push(val);
-  invitadoInput.value = "";
+
+  if(val.name.length > 0){
+    array.push(val);
+    invitadoInput.value = "";
+  }
+
   render();
 });
 

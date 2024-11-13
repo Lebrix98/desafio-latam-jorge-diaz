@@ -7,28 +7,47 @@
     <title>Document</title>
   </head>
   <body>
-
     <div class="content">
-        <h1 class="title">Todo List</h1>
-        <div class="todo">
-          <input class="inpText" id="value" type="text" placeholder="Ingrese la Tarea" />
-          <button class="btnAdd" onclick="addTodo()">Agregar</button>
+      <h1 class="title">Todo List</h1>
+      <div class="todo">
+        <input
+          class="inpText"
+          id="value"
+          type="text"
+          placeholder="Ingrese la Tarea"
+        />
+        <button class="btnAdd" onclick="addTodo()">Agregar</button>
+      </div>
+      <div class="information">
+        <div class="count">
+          <h5 class="total">Total: <span id="todoCount"></span></h5>
+          <h5 class="check">Realizadas: <span id="checkCount"></span></h5>
         </div>
-        <div class="information">
-          <div class="count">
-            <h5 class="total">Total: <span id="todoCount"></span></h5>
-            <h5 class="check">Realizadas: <span id="checkCount"></span></h5>
-          </div>
-          <div class="list">
-            <table>
-              <thead>
-                <th>ID</th>
-                <th>Tarea</th>
-              </thead>
-              <tbody id="todoList"></tbody>
-            </table>
-          </div>
+        <div class="list">
+          <table>
+            <thead>
+              <th>ID</th>
+              <th>Todo</th>
+              <th>✔</th>
+              <th>✖</th>
+            </thead>
+            <tbody id="todoList"></tbody>
+          </table>
         </div>
+      </div>
+    </div>
+
+    <div class="Volver">
+      <p>
+        <a href="./../../index.html">
+          <img
+            src="./../../../assets/img/volverBlack.png"
+            width="45"
+            height="45"
+            alt="Volver"
+          />
+        </a>
+      </p>
     </div>
 
     <script src="./assets/js/index.js"></script>

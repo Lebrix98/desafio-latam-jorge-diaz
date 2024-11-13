@@ -25,8 +25,11 @@ let arrayTodo = [];
 
 btnAddTodo.addEventListener("click", () => {
   let todo = valueTodo.value;
-  arrayTodo.push(todo);
-  valueTodo.value = "";
+
+  if (todo.length > 0) {
+    arrayTodo.push(todo);
+    valueTodo.value = "";
+  }
 
   let printTodo = "";
 
