@@ -12,7 +12,7 @@ const listTodo = document.querySelector("#todoList");
 let array = [];
 let valTotal = 0;
 let valRealize = 0;
-let i = 0;
+let i = 1;
 
 total.innerHTML = valTotal;
 realizadas.innerHTML = valRealize;
