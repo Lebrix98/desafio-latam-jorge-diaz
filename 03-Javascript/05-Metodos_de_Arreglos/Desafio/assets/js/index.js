@@ -1,3 +1,10 @@
+// Data
+const data = [
+  { id: 1, todo: "Despertar", check: true },
+  { id: 2, todo: "Levantarme", check: true },
+  { id: 3, todo: "Bañarme", check: false },
+];
+
 // Valor input
 const inputText = document.querySelector("#value");
 
@@ -8,18 +15,12 @@ const realizadas = document.querySelector("#checkCount");
 // Lista de Tareas
 const listTodo = document.querySelector("#todoList");
 
-// Array vacio
-let array = [];
-let valTotal = 0;
-let valRealize = 0;
-let i = 1;
-
-total.innerHTML = valTotal;
-realizadas.innerHTML = valRealize;
+// Message input
+const mess = document.querySelector("#message");
 
 const renderTodo = () => {
   let printHtml = "";
-  for (let item of array) {
+  for (let item of data) {
     printHtml += `
       <tr>
       <td>${item.id}</td>
@@ -34,32 +35,41 @@ const renderTodo = () => {
 };
 
 function addTodo() {
-  let val = { id: i, todo: inputText.value, check: false };
+  let val = {
+    id: data[data.length - 1].id + 1,
+    todo: inputText.value,
+    check: false,
+  };
 
   if (val.todo.length > 0) {
-    val.id = i++;
-    array.push(val);
+    data.push(val);
     inputText.value = "";
     updateValue();
     renderTodo();
+    mess.innerHTML = "";
+  } else {
+    mess.innerHTML = "No ha ingresado nada aun";
   }
 }
 
 const deleteTodo = (id) => {
-  let index = array.findIndex((elem) => elem.id == id);
-  array.splice(index, 1);
+  let index = data.findIndex((elem) => elem.id == id);
+  data.splice(index, 1);
   updateValue();
   renderTodo();
 };
 
 const completeTodo = (id) => {
-  const todoComplete = array.find((elem) => elem.id === id);
+  const todoComplete = data.find((elem) => elem.id === id);
   todoComplete.check = true;
   updateValue();
 };
 
 const updateValue = () => {
-  let countTodos = array.filter((elem) => elem.check === true);
-  total.innerHTML = array.length;
+  let countTodos = data.filter((elem) => elem.check === true);
+  total.innerHTML = data.length;
   realizadas.innerHTML = countTodos.length;
 };
+
+renderTodo();
+updateValue();
