@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+li {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.inpService {
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 25px;
+}
+
+.btnAdd {
+    background-color: #0cd337;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.listTodo {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 99px;
+    background-color: #09c0e0;
+    box-shadow: 2px 2px 2px #dc3545;
+}

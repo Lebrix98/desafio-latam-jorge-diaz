@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="title">Todo List</h1>
+      <div class="todo">
+        <div>
+          <input
+            class="inpText"
+            id="value"
+            type="text"
+            placeholder="Ingrese la Tarea"
+          />
+          <button class="btnAdd" onclick="addTodo()">Agregar</button>
+        </div>
+        <span id="message"></span>
+      </div>
+      <div class="information">
+        <div class="count">
+          <h5 class="total">Total: <span id="todoCount"></span></h5>
+          <h5 class="check">Realizadas: <span id="checkCount"></span></h5>
+        </div>
+        <div class="list">
+          <table>
+            <thead>
+              <th>ID</th>
+              <th>Todo</th>
+              <th>✔</th>
+              <th>✖</th>
+            </thead>
+            <tbody id="todoList"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="Volver">
+      <p>
+        <a href="./../../index.html">
+          <img
+            src="./../../../assets/img/volverBlack.png"
+            width="45"
+            height="45"
+            alt="Volver"
+          />
+        </a>
+      </p>
+    </div>
+
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
