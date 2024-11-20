@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Conversor</title>
   </head>
@@ -40,10 +41,29 @@
             <option value="bitcoin">Bitcoin</option>
           </select>
         </div>
-        <button onclick="searchCurrency()">Buscar</button>
+        <button class="btn" id="btnSearch">Buscar</button>
         <span id="result"></span>
       </div>
+
+      <div class="graph">
+        <canvas id="myChart" width="500" height="200"></canvas>
+      </div>
     </div>
-    <script src="./assets/js/index.js"></script>
+
+    <div class="Volver">
+      <p>
+        <a href="./../../index.html">
+          <img
+            src="./../../../assets/img/volverBlack.png"
+            width="45"
+            height="45"
+            alt="Volver"
+          />
+        </a>
+      </p>
+    </div>
+    <script type="module" src="./assets/js/index.js"></script>
+    <script type="module" src="./assets/js/currency.js"></script>
+    <script type="module" src="./assets/js/graph.js"></script>
   </body>
 </html>

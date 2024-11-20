@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container {
-    width: 100vw;
-    height: 100vh;
-    background-color: #000;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1f1e1e;
 }
 
 .title {
@@ -25,18 +31,91 @@
     margin: 1rem 0rem;
     border-bottom: 1px solid #3333ff;
     border-top: 1px solid #3333ff;
-    color: #Ffffff;
+    color: #ffffff;
   }
 }
 
 .content {
-    width: 100%;
-    max-width: fit-content;
-    padding: 2rem 5rem;
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    text-align: center;
-    margin: 0 auto;
-    background-color: #d7d7d7;
+  width: 100%;
+  max-width: max-content;
+  height: 100%;
+  max-height: max-content;
+  padding: 2rem 5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #d7d7d7;
+  box-shadow: 2px 2px 2px #3333ff;
+  border-radius: 50px;
+
+  > *:nth-child(2),
+  *:nth-child(3),
+  *:nth-child(4) {
+    margin-top: 1rem;
+  }
+
+  .clp {
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      padding: 0.8rem;
+      font-size: 0.8rem;
+      border-radius: 10px;
+    }
+  }
+
+  .selectOpt {
+    h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    select {
+      padding: 0.8rem;
+      font-size: 0.8rem;
+      border-radius: 10px;
+    }
+  }
+
+  .btn {
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #3333ff;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    color: #d7d7d7;
+  }
+}
+
+.graph {
+  width: 100%;
+  max-width: max-content;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #d7d7d7;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+
+.Volver {
+  border-radius: 6px 6px 6px 6px;
+  bottom: 10px;
+  margin-left: 10px;
+  padding: 10px 0 0;
+  position: fixed;
+  right: 10px;
+  text-align: center;
+  width: 90px;
+  z-index: 15;
+  background-color: #ffffff;
 }

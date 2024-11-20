@@ -1,26 +1,15 @@
-const num = document.querySelector("#numClp");
-const select = document.querySelector("#select");
-const result = document.querySelector("#result");
+import { renderCurrency } from "./currency.js";
 
-const getCurrency = async (value = "") => {
-  const res = await fetch(`https://mindicador.cl/api/${value}`);
-  const data = await res.json();
-  return data;
-};
+export const select = document.querySelector("#select");
+export const result = document.querySelector("#result");
+export const search = document.querySelector("#btnSearch");
+export const num = document.querySelector("#numClp");
+export const chartDOM = document.getElementById("myChart");
 
-const renderCurrency = async (val) => {
-  const curren = await getCurrency(val);
-  const numValue = num.value;
-  const arr = curren.serie[1].valor;
+result.innerHTML = "...";
 
-  const newResult = numValue * arr;
 
-  let printHtml = `Resultado: ${newResult.toLocaleString()}`;
-
-  result.innerHTML = printHtml;
-};
-
-const searchCurrency = () => {
+search.addEventListener("click", () => {
   let value = select.value;
   return renderCurrency(value);
-};
+});
