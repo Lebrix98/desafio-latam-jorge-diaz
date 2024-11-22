@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 input::-webkit-outer-spin-button,
@@ -10,45 +10,43 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-.container {
-  width: 100vw;
-  height: 100vh;
+body {
   background-color: #1f1e1e;
 }
 
 .title {
-  width: 100%;
-  max-width: 80%;
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  max-width: 80%;
+  width: 100%;
 
   .text {
-    width: 100%;
-    max-width: fit-content;
-    text-align: center;
-    padding: 1rem 0rem;
-    margin: 1rem 0rem;
     border-bottom: 1px solid #3333ff;
     border-top: 1px solid #3333ff;
     color: #ffffff;
+    margin: 1rem 0rem;
+    max-width: fit-content;
+    padding: 1rem 0rem;
+    text-align: center;
+    width: 100%;
   }
 }
 
 .content {
-  width: 100%;
-  max-width: max-content;
-  height: 100%;
-  max-height: max-content;
-  padding: 2rem 5rem;
-  display: flex;
-  justify-content: center;
-  flex-flow: column wrap;
-  text-align: center;
-  margin: 0 auto;
   background-color: #d7d7d7;
-  box-shadow: 2px 2px 2px #3333ff;
   border-radius: 50px;
+  box-shadow: 2px 2px 2px #3333ff;
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  max-height: max-content;
+  max-width: max-content;
+  padding: 2rem 5rem;
+  text-align: center;
+  width: 100%;
 
   > *:nth-child(2),
   *:nth-child(3),
@@ -62,9 +60,11 @@ input::-webkit-inner-spin-button {
     }
 
     input {
-      padding: 0.8rem;
-      font-size: 0.8rem;
       border-radius: 10px;
+      font-size: 0.8rem;
+      padding: 0.8rem;
+      text-align: center;
+      width: 100%;
     }
   }
 
@@ -74,40 +74,49 @@ input::-webkit-inner-spin-button {
     }
 
     select {
-      padding: 0.8rem;
-      font-size: 0.8rem;
       border-radius: 10px;
+      font-size: 0.8rem;
+      padding: 0.8rem;
+      text-align: center;
+      width: 100%;
     }
   }
 
   .btn {
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-size: 1rem;
     background-color: #3333ff;
+    border-radius: 10px;
     color: #ffffff;
     cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem;
   }
 
   .btn:hover {
     color: #d7d7d7;
   }
+
+  .resultCalc {
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 5px;
+    margin-top: 1.5rem;
+    animation: changeColor 2s ease-in infinite;
+  }
 }
 
 .graph {
-  width: 100%;
-  max-width: max-content;
-  height: max-content;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  background-color: #d7d7d7;
-  border-radius: 10px;
   margin-top: 1.5rem;
+  max-width: 50%;
   padding: 1rem;
+  width: 100%;
 }
 
 .Volver {
+  background-color: #ffffff;
   border-radius: 6px 6px 6px 6px;
   bottom: 10px;
   margin-left: 10px;
@@ -117,5 +126,16 @@ input::-webkit-inner-spin-button {
   text-align: center;
   width: 90px;
   z-index: 15;
-  background-color: #ffffff;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #832424;
+  }
+  100% {
+    color: #000;
+  }
 }

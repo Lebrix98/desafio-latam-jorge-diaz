@@ -7,7 +7,7 @@ const getCurrency = async (value = "") => {
     const data = await res.json();
     return {data, res};
   } catch (error) {
-    console.log("Error::", error);
+    console.warn("Error::", error);
     result.innerHTML = `!Lo sentimos¡`;
   }
 };
@@ -18,7 +18,7 @@ export const renderCurrency = async (val) => {
 
   const arr = data.serie[1].valor;
 
-  const newResult = numValue * arr;
+  const newResult = numValue / arr;
 
   let printHtml = `Resultado: ${newResult.toLocaleString()}`;
 

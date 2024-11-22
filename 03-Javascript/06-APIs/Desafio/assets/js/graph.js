@@ -16,6 +16,7 @@ export const configGraph = (monedas) => {
   const label = filterData
     .filter((item, index) => index < 10)
     .map((item) => item.fecha);
+
   const data = filterData
     .filter((item, index) => index < 10)
     .map((item) => item.valor);
@@ -36,6 +37,15 @@ export const configGraph = (monedas) => {
   return renderGrafica(config);
 };
 
-export const renderGrafica = async (config) => {
-  new Chart(chartDOM, config);
+let myGraph = null;
+
+const renderGrafica = async (config) => {
+  if (myGraph != null) {
+    myGraph.destroy();
+  }
+
+  chartDOM.style.backgroundColor = `#d7d7d7`;
+  chartDOM.style.borderRadius = `10px`;
+
+  myGraph = new Chart(chartDOM, config);
 };
