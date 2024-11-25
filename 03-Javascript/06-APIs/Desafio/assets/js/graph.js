@@ -37,7 +37,7 @@ export const configGraph = (monedas) => {
   return renderGrafica(config);
 };
 
-let myGraph = null;
+export let myGraph = null;
 
 const renderGrafica = async (config) => {
   if (myGraph != null) {

@@ -1,11 +1,11 @@
-import { getMonedas } from "./graph.js";
-import { num, result } from "./index.js";
+import { getMonedas, myGraph } from "./graph.js";
+import { chartDOM, num, result } from "./index.js";
 
 const getCurrency = async (value = "") => {
   try {
     const res = await fetch(`https://mindicador.cl/api/${value}`);
     const data = await res.json();
-    return {data, res};
+    return { data, res };
   } catch (error) {
     console.warn("Error::", error);
     result.innerHTML = `!Lo sentimos¡`;
@@ -13,16 +13,28 @@ const getCurrency = async (value = "") => {
 };
 
 export const renderCurrency = async (val) => {
-  const {data , res} = await getCurrency(val);
-  const numValue = num.value;
+  try {
+    const { data, res } = await getCurrency(val);
+    const numValue = num.value;
 
-  const arr = data.serie[1].valor;
+    if (numValue !== "") {
+      const arr = data.serie[1].valor;
 
-  const newResult = numValue / arr;
+      const newResult = numValue / arr;
 
-  let printHtml = `Resultado: ${newResult.toLocaleString()}`;
+      let printHtml = `Resultado: ${newResult.toLocaleString()}`;
 
-  getMonedas(res.url)
+      getMonedas(res.url);
 
-  result.innerHTML = printHtml;
+      result.innerHTML = printHtml;
+    } else {
+      myGraph.destroy();
+      chartDOM.style.backgroundColor = "";
+      result.innerHTML = `Debe ingresar un valor para convertir.`;
+    }
+  } catch (error) {
+    myGraph.destroy();
+    chartDOM.style.backgroundColor = "";
+    result.innerHTML = `Debe seleccionar una Moneda a Convertir.`;
+  }
 };
