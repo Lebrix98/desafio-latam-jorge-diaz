@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contentCloud {
+  text-align: center;
+  padding: 0px 40px;
+}
+.climas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.clima {
+  background: black;
+  color: white;
+}
+
+.contentUsers {
+  text-align: center;
+  padding: 0px 40px;
+}
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 45%);
+  gap: 10px;
+}
+.user {
+  background: black;
+  color: white;
+}
+
+.contentTryCatch {
+  text-align: center;
+  padding: 0px 40px;
+}
